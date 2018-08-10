@@ -16,8 +16,9 @@ const gen = require('./15_generators');
 const dance = require('./16_dance');
 const spinlock = require('./17_spinlock');
 const assembler = require('./18_assembler');
+const tubes = require('./19_tubes');
 const fs = require('fs');
 
-fs.readFile('./inputs/18.txt', 'utf8', (e, data) => {
-  console.log(assembler.runParalel(data).counts);
+fs.readFile('./inputs/19.txt', 'utf8', (e, data) => {
+  console.log(tubes.trace(data).stepCount);
 });
